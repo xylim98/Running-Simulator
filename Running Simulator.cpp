@@ -61,6 +61,12 @@ void printTrack(int positionA, int positionB) {
         else {
             cout << "   |";
         }
+
+        if (i == 60 && positionA > 60) {
+            cout << " 1 |";
+        } else if (i == 60 && positionB > 60) {
+            cout << " 2 |";
+        }
     }
 }
 
